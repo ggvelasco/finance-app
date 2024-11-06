@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../_components/ui/button";
 import { LogInIcon } from "lucide-react";
+import { SignInButton } from "@clerk/nextjs";
 const LoginPage = () => {
   return (
     <div className="grid h-full grid-cols-2">
@@ -19,10 +20,12 @@ const LoginPage = () => {
           para monitorar suas movimentações, e oferecer insights personalizados,
           facilitando o controle do seu orçamento.
         </p>
+        <SignInButton>
         <Button variant="outline">
           <LogInIcon className="mr-2" />
           Fazer login ou criar conta
         </Button>
+        </SignInButton>
       </div>
       {/* DIREITA */}
       <div className="relative h-full w-full">
